@@ -176,6 +176,8 @@ So `evaluate.py` also reports:
   - `run_summary.json` — baseline + CV + holdout RMSLE numbers
   - `feature_importance.png` — top-30 features by gain
   - `pipeline.log` — full training log including error slice tables
+  - `kaggle_leaderboard.webp` — leaderboard row #269 showing username + score
+  - `kaggle_overview.webp` — competition overview page for context
 
 ## 10. AI assistance disclosure
 
