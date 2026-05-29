@@ -1,0 +1,111 @@
+[load] reading + merging tables ...
+[load] panel shape: (3029400, 22)
+[features] building features ...
+[features] 46 features
+[baseline] seasonal-naive RMSLE on final_holdout: 0.61704
+Training until validation scores don't improve for 100 rounds
+[200]	train's rmse: 0.397567	valid's rmse: 0.3922
+[400]	train's rmse: 0.378429	valid's rmse: 0.386839
+[600]	train's rmse: 0.368845	valid's rmse: 0.385137
+[800]	train's rmse: 0.36194	valid's rmse: 0.384476
+[1000]	train's rmse: 0.356645	valid's rmse: 0.383972
+[1200]	train's rmse: 0.352067	valid's rmse: 0.383586
+[1400]	train's rmse: 0.348188	valid's rmse: 0.383154
+[1600]	train's rmse: 0.344679	valid's rmse: 0.383009
+Early stopping, best iteration is:
+[1643]	train's rmse: 0.343915	valid's rmse: 0.382969
+[cv] fold_3_2017-06-13_2017-06-28  best_iter=1643  valid RMSLE=0.38267
+Training until validation scores don't improve for 100 rounds
+[200]	train's rmse: 0.399029	valid's rmse: 0.380907
+[400]	train's rmse: 0.379361	valid's rmse: 0.376965
+[600]	train's rmse: 0.369867	valid's rmse: 0.375455
+[800]	train's rmse: 0.362782	valid's rmse: 0.374867
+[1000]	train's rmse: 0.357409	valid's rmse: 0.374393
+[1200]	train's rmse: 0.352937	valid's rmse: 0.374099
+[1400]	train's rmse: 0.348941	valid's rmse: 0.373902
+Early stopping, best iteration is:
+[1323]	train's rmse: 0.350441	valid's rmse: 0.373877
+[cv] fold_2_2017-06-29_2017-07-14  best_iter=1323  valid RMSLE=0.37371
+Training until validation scores don't improve for 100 rounds
+[200]	train's rmse: 0.397451	valid's rmse: 0.399771
+[400]	train's rmse: 0.378459	valid's rmse: 0.397953
+[600]	train's rmse: 0.369008	valid's rmse: 0.396246
+[800]	train's rmse: 0.36256	valid's rmse: 0.395518
+[1000]	train's rmse: 0.357098	valid's rmse: 0.394989
+[1200]	train's rmse: 0.352562	valid's rmse: 0.394705
+[1400]	train's rmse: 0.348711	valid's rmse: 0.394212
+[1600]	train's rmse: 0.345164	valid's rmse: 0.393917
+[1800]	train's rmse: 0.34191	valid's rmse: 0.393603
+[2000]	train's rmse: 0.338902	valid's rmse: 0.393665
+Early stopping, best iteration is:
+[1924]	train's rmse: 0.340022	valid's rmse: 0.393523
+[cv] fold_1_2017-07-15_2017-07-30  best_iter=1924  valid RMSLE=0.39351
+Training until validation scores don't improve for 100 rounds
+[200]	train's rmse: 0.398035	valid's rmse: 0.399539
+[400]	train's rmse: 0.37946	valid's rmse: 0.392405
+[600]	train's rmse: 0.369582	valid's rmse: 0.390304
+[800]	train's rmse: 0.363014	valid's rmse: 0.389606
+[1000]	train's rmse: 0.357528	valid's rmse: 0.389035
+[1200]	train's rmse: 0.353057	valid's rmse: 0.389095
+Early stopping, best iteration is:
+[1108]	train's rmse: 0.355077	valid's rmse: 0.388948
+[cv] fold_0_2017-07-31_2017-08-15  best_iter=1108  valid RMSLE=0.38894
+[cv] mean RMSLE = 0.38471  +/- 0.00742
+Training until validation scores don't improve for 100 rounds
+[200]	train's rmse: 0.398035	valid's rmse: 0.399539
+[400]	train's rmse: 0.37946	valid's rmse: 0.392405
+[600]	train's rmse: 0.369582	valid's rmse: 0.390304
+[800]	train's rmse: 0.363014	valid's rmse: 0.389606
+[1000]	train's rmse: 0.357528	valid's rmse: 0.389035
+[1200]	train's rmse: 0.353057	valid's rmse: 0.389095
+Early stopping, best iteration is:
+[1108]	train's rmse: 0.355077	valid's rmse: 0.388948
+[final-holdout] RMSLE=0.38894  MAE=55.875  RevMAE=384.079
+
+[error] holiday vs normal:
+                   rmsle        mae      n  mean_sales
+is_any_holiday                                        
+0               0.387721  54.472383  26664  467.620382
+1               0.406179  76.109725   1848  460.254281
+
+[error] promo vs normal:
+                rmsle         mae      n  mean_sales
+is_on_promo                                         
+0            0.442147    9.491636  16031   55.099138
+1            0.307382  115.450842  12481  996.385346
+
+[error] top-10 worst families (by RMSLE):
+                               rmsle        mae    n  mean_sales
+family                                                          
+SCHOOL AND OFFICE SUPPLIES  0.652619  38.044159  864   59.947917
+LINGERIE                    0.618773   3.802157  864    7.773148
+GROCERY II                  0.566811   9.793667  864   28.971065
+CELEBRATION                 0.543272   4.826533  864   12.462963
+MAGAZINES                   0.523583   2.919121  864    7.113426
+HARDWARE                    0.521784   1.046933  864    1.449074
+LADIESWEAR                  0.516927   3.657968  864   10.082176
+AUTOMOTIVE                  0.498904   2.784968  864    7.385417
+SEAFOOD                     0.491608   4.434836  864   19.977916
+BEAUTY                      0.471819   2.341535  864    6.663194
+
+[error] top-10 worst stores (by RMSLE):
+              rmsle         mae    n  mean_sales
+store_nbr                                       
+19         0.472127   35.504738  528  285.055786
+22         0.463285   49.331619  528  230.564235
+25         0.458280   68.941198  528  293.412002
+20         0.453684  104.698344  528  547.107449
+36         0.449035   83.350324  528  404.245206
+14         0.446404   50.096877  528  258.803297
+26         0.441039   27.640843  528  141.293328
+34         0.433949   45.387885  528  343.219900
+38         0.430000   71.700294  528  374.589919
+43         0.429032   63.893718  528  500.438678
+[plot] feature importance -> /Users/palaniprashanth/ Grocery Sales Forecasting/outputs/feature_importance.png
+[200]	train's rmse: 0.397027
+[400]	train's rmse: 0.379304
+[600]	train's rmse: 0.369728
+[800]	train's rmse: 0.363228
+[1000]	train's rmse: 0.357881
+[submission] wrote 28512 rows -> /Users/palaniprashanth/ Grocery Sales Forecasting/outputs/submission.csv
+[summary] /Users/palaniprashanth/ Grocery Sales Forecasting/outputs/run_summary.json

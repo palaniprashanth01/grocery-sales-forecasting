@@ -1,0 +1,58 @@
+# ---------------------------------------------------------------------------
+# Kaggle data — NOT redistributed. Users download themselves per README.
+# ---------------------------------------------------------------------------
+data/*.csv
+data/*.zip
+data/*.parquet
+data/_*.parquet
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+build/
+dist/
+develop-eggs/
+.installed.cfg
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# ---------------------------------------------------------------------------
+# Jupyter
+# ---------------------------------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---------------------------------------------------------------------------
+# IDE / OS
+# ---------------------------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------------------
+# Local runtime artefacts we don't want to track
+# (outputs/ IS tracked — it holds the submission + plots as evidence.)
+# ---------------------------------------------------------------------------
+*.log
+!outputs/pipeline.log
