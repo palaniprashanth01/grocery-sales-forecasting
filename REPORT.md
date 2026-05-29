@@ -176,8 +176,10 @@ So `evaluate.py` also reports:
   - `run_summary.json` — baseline + CV + holdout RMSLE numbers
   - `feature_importance.png` — top-30 features by gain
   - `pipeline.log` — full training log including error slice tables
-  - `kaggle_leaderboard.webp` — leaderboard row #269 showing username + score
-  - `kaggle_overview.webp` — competition overview page for context
+  - `kaggle_submission.webp` — Kaggle "My Submissions" page showing
+    `submission.csv` accepted with public score 0.42049
+  - `kaggle_leaderboard.webp` — leaderboard row #269 showing username
+    `PalaniPrashanthbenz` and public LB score 0.42049
 
 ## 10. AI assistance disclosure
 
